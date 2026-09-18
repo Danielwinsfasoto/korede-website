@@ -4,6 +4,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
   return [
     { url: baseUrl, lastModified: new Date(), priority: 1.0 },
+    { url: `${baseUrl}/services`, lastModified: new Date(), priority: 0.9 },
     { url: `${baseUrl}/music`, lastModified: new Date(), priority: 0.8 },
     { url: `${baseUrl}/contact`, lastModified: new Date(), priority: 0.8 },
   ];

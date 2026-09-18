@@ -30,7 +30,7 @@ export default function HeroSection() {
         style={{ height: '120%', top: '-10%' }}
       >
         <AppImage
-          src="/assets/images/WhatsApp_Image_2026-08-14_at_3.44.07_PM__1_-1786751045549.jpeg"
+          src="/assets/images/IMG_4961.JPG"
           alt="Akinode Korede Emmanuel in elegant blue suit, confident smile, studio portrait with teal panel"
           fill
           priority
@@ -54,7 +54,7 @@ export default function HeroSection() {
             className="section-label mb-6 hero-text-in"
             style={{ animationDelay: '0.1s' }}
           >
-            Classical Violinist · Nigeria
+            Professional Violinist · Nigeria
           </div>
 
           {/* Name */}
@@ -66,9 +66,9 @@ export default function HeroSection() {
           </h1>
           <h1
             className="font-bold tracking-tighter leading-none mb-2 text-gradient-teal hero-text-in"
-            style={{ fontSize: 'clamp(2.8rem, 7.5vw, 6.5rem)', animationDelay: '0.4s', fontStyle: 'italic' }}
+            style={{ fontSize: 'clamp(2.8rem, 7.5vw, 6.5rem)', animationDelay: '0.4s', fontStyle: 'clamp' }}
           >
-            Korede
+            KOREDE
           </h1>
           <h2
             className="font-light tracking-widest uppercase text-secondary mb-2 hero-text-in"

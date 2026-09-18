@@ -24,14 +24,14 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'),
-  title: 'Akinode Korede Emmanuel — Violinist & Classical Artist',
-  description: 'Official website of Akinode Korede Emmanuel, Nigerian classical violinist. Explore performances, music, videos, and book for events.',
+  title: 'Akinode Korede Emmanuel — Professional Violinist & Artist',
+  description: 'Official website of Akinode Korede Emmanuel, Nigerian professional violinist. Explore performances, music, videos, and book for events.',
   icons: {
     icon: [{ url: '/favicon.ico', type: 'image/x-icon' }],
   },
   openGraph: {
     title: 'Akinode Korede Emmanuel — Violinist',
-    description: 'Nigerian classical violinist. Performances, recordings, and bookings.',
+    description: 'Nigerian professional violinist. Performances, recordings, and bookings.',
     images: [{ url: '/assets/images/app_logo.png', width: 1200, height: 630 }],
   },
 };

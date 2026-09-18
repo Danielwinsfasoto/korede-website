@@ -9,21 +9,23 @@ export default function Footer() {
     <footer className="border-t border-border py-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-          {/* Logo + Name */}
-          <Link href="/" className="flex items-center gap-2">
-            <AppLogo size={28} />
             <span className="text-sm font-semibold text-foreground tracking-wider uppercase">
-              Akinode Korede
+              Violinist Ak3
             </span>
-          </Link>
 
           {/* Links */}
           <div className="flex items-center gap-6 text-sm font-medium text-muted-foreground">
             <Link href="/" className="hover:text-foreground transition-colors">
               Home
             </Link>
+            <Link href="/services" className="hover:text-foreground transition-colors">
+              Services
+            </Link>
             <Link href="/music" className="hover:text-foreground transition-colors">
               Music
+            </Link>
+            <Link href="/reviews" className="hover:text-foreground transition-colors">
+              Reviews
             </Link>
             <Link href="/contact" className="hover:text-foreground transition-colors">
               Contact
