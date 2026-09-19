@@ -96,8 +96,8 @@ const services: Service[] = [
     occasions: ['Guest Arrival', 'Ceremony', 'First Dance', 'Special Performances', 'Cocktail Hour'],
     media: [
       { type: 'image', src: '/assets/images/IMG_7663.JPG.jpeg', alt: 'First dance violin performance' },
-      { type: 'video', src: '/assets/videos/IMG_9211.MOV', alt: 'Violin performance at a wedding ceremony' },
-      { type: 'video', src: '/assets/videos/IMG_8236.MOV', alt: 'Violin performance at a wedding ceremony' },
+      { type: 'video', src: 'https://rtmvzkxnzqxoreczpwth.supabase.co/storage/v1/object/public/videos/Img%209211.mp4', alt: 'Violin performance at a wedding ceremony' },
+      { type: 'video', src: 'https://rtmvzkxnzqxoreczpwth.supabase.co/storage/v1/object/public/videos/Img%208236.mp4', alt: 'Violin performance at a wedding ceremony' },
 
       
     ],
