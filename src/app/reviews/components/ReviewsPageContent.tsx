@@ -21,100 +21,62 @@ interface ArtistQuote {
   collaboration: string;
 }
 
-interface PerformanceStat {
-  value: string;
-  label: string;
-  sublabel: string;
-}
-
 const clientReviews: ClientReview[] = [
   {
     id: 1,
-    name: 'Adaeze Okonkwo',
-    role: 'Event Director',
-    event: 'Lagos Corporate Gala 2025',
-    quote: 'Akinode\'s performance was the defining moment of our entire evening. The way he moved through Vivaldi into contemporary Afrobeats fusion left our 400 guests completely spellbound. We\'ve had performers before — none commanded the room like this.',
+    name: 'Foluke Oyetayo',
+    role: '',
+    event: '',
+    quote: 'I honestly had such a wonderful experience! He is really good at what he does, and the way he plays the violin is just beautiful. You can tell he genuinely loves what he does. He was also really nice and professional. I would definitely recommend him to anyone looking for a violinist. He really made the experience special❤️🎻.',
     rating: 5,
-    date: 'November 2025',
+    date: 'August 2026',
     featured: true,
   },
   {
     id: 2,
-    name: 'James & Priya Whitfield',
-    role: 'Wedding Couple',
-    event: 'Private Wedding Ceremony, Abuja',
-    quote: 'We wanted something that felt both classical and deeply personal for our ceremony. Akinode understood exactly what we needed without us having to explain twice. Our guests are still talking about the violin solo during the reception.',
-    rating: 5,
-    date: 'March 2025',
+    name: 'Perfect Akhiromen',
+    role: '',
+    event: '',
+    quote: 'K.strings is a "Pro" at what he does, I mean his expertise is something to be greatly applauded. He loves what he does and does it beautifully well. With K.strings there\'s consistency and excellence. You can always count on him, he\'s your sure plug👍',    rating: 5,
+    date: 'August 2026',
     featured: true,
   },
   {
     id: 3,
-    name: 'Dr. Funmi Adeyemi',
-    role: 'Cultural Attaché',
-    event: 'Nigerian Cultural Night, London',
-    quote: 'Representing Nigerian artistry on an international stage requires someone who carries both technical mastery and cultural depth. Akinode delivered both with extraordinary grace. A true ambassador of sound.',
+    name: 'Faderera Falade',
+    role: '',
+    event: '',
+    quote: 'kstrings is very good, It was absolutely beautiful 😍 and he went beyond expectations.',
     rating: 5,
-    date: 'July 2025',
+    date: 'March 2025',
   },
   {
     id: 4,
-    name: 'Marcus Delacroix',
-    role: 'Music Producer',
-    event: 'Studio Session — Afro-Classical EP',
-    quote: 'I\'ve worked with string players across three continents. Akinode brings something rare: he listens first, then plays. Every take had intention behind it. The tracks we recorded together are some of the finest work I\'ve produced.',
+    name: 'Bolu Mary',
+    role: '',
+    event: '',
+    quote: 'Best violinists I\'ve ever known. Diligent and Consistent in all he does. Doesn\'t disappoint, and render quality service Weldone my G, the sky is your starting point SOAR🪁',
     rating: 5,
     date: 'January 2025',
   },
   {
     id: 5,
-    name: 'Chisom Eze',
-    role: 'Private Client',
-    event: 'Anniversary Dinner, Port Harcourt',
-    quote: 'My husband had no idea I\'d arranged a live violinist for our anniversary. When Akinode began playing, he actually teared up. That\'s the kind of impact this man creates. Absolutely unforgettable.',
-    rating: 5,
-    date: 'September 2025',
+    name: 'Precious Adiele',
+    role: '',
+    event: '',
+    quote: 'AK3 strings a.k.a celebrity violinist is an incredibly talented and professional instrumentalist who delivers soulful, engaging live music perfect for weddings, parties and events.',
+    rating: 4,
+    date: 'August 2026',
   },
   {
     id: 6,
-    name: 'Tunde Fashola Jr.',
-    role: 'Brand Manager, Luxe Events Co.',
-    event: 'Product Launch — Eko Hotel',
-    quote: 'We needed a performer who could hold the attention of a discerning crowd between presentations. Akinode didn\'t just hold attention — he elevated the entire brand experience. Bookings went up 40% after that night.',
-    rating: 5,
-    date: 'May 2025',
+     name: 'Solomon Adewusi',
+     role: '',
+     event: '',
+     quote: 'I love ak3\'s work, He\'s so good at what he does🥀🩵',
+     rating: 5,
+     date: 'March 2026',
   },
-];
-
-const artistQuotes: ArtistQuote[] = [
-  {
-    id: 1,
-    name: 'Seun Kuti',
-    instrument: 'Saxophonist & Bandleader',
-    quote: 'Playing alongside Akinode showed me what it means to truly bridge worlds. His violin doesn\'t just accompany — it converses. He brought a dimension to our Afrobeat set that I didn\'t know was missing until it arrived.',
-    collaboration: 'Afrobeat Fusion Concert, Lagos 2024',
-  },
-  {
-    id: 2,
-    name: 'Yemi Alade',
-    instrument: 'Recording Artist',
-    quote: 'When we were arranging the strings for my album, Akinode\'s interpretation of the melody was so instinctive, so emotionally precise, that we kept his first take. That\'s how good he is.',
-    collaboration: 'Studio Collaboration, 2025',
-  },
-  {
-    id: 3,
-    name: 'Prof. Emeka Nwosu',
-    instrument: 'Classical Pianist & Composer',
-    quote: 'Akinode has that rare quality among young musicians — he has studied deeply but plays freely. His technique is impeccable, yet it never feels like a performance of technique. It feels like truth.',
-    collaboration: 'Chamber Music Series, Abuja 2024',
-  },
-];
-
-const performanceStats: PerformanceStat[] = [
-  { value: '200+', label: 'Live Performances', sublabel: 'Across Nigeria, UK & Europe' },
-  { value: '98%', label: 'Client Satisfaction', sublabel: 'Based on post-event feedback' },
-  { value: '50+', label: 'Private Events', sublabel: 'Weddings, galas & corporate' },
-  { value: '12+', label: 'Studio Collaborations', sublabel: 'With acclaimed artists' },
 ];
 
 function StarRating({ rating }: { rating: number }) {
@@ -157,7 +119,6 @@ function useReveal() {
 
 export default function ReviewsPageContent() {
   const heroReveal = useReveal();
-  const statsReveal = useReveal();
   const featuredReveal = useReveal();
   const gridReveal = useReveal();
   const artistReveal = useReveal();
@@ -193,28 +154,6 @@ export default function ReviewsPageContent() {
           <p className="text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
             From intimate weddings to international stages — real words from clients, collaborators, and fellow artists who have experienced the performance firsthand.
           </p>
-        </div>
-      </section>
-
-      {/* Performance Stats */}
-      <section className="py-16 border-y border-border">
-        <div
-          ref={statsReveal.ref}
-          className="max-w-6xl mx-auto px-6"
-        >
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-0 divide-x divide-y md:divide-y-0 divide-border">
-            {performanceStats.map((stat, i) => (
-              <div
-                key={stat.label}
-                className={`px-8 py-8 text-center transition-all duration-700 ${statsReveal.visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}
-                style={{ transitionDelay: `${i * 100}ms` }}
-              >
-                <div className="text-4xl md:text-5xl font-bold text-accent mb-1">{stat.value}</div>
-                <div className="text-foreground font-semibold text-sm tracking-wide mb-1">{stat.label}</div>
-                <div className="text-muted-foreground text-xs">{stat.sublabel}</div>
-              </div>
-            ))}
-          </div>
         </div>
       </section>
 
@@ -320,57 +259,6 @@ export default function ReviewsPageContent() {
                   <div className="flex items-center justify-between mt-1">
                     <div className="text-muted-foreground text-xs truncate pr-2">{review.event}</div>
                     <div className="text-muted-foreground text-xs font-mono whitespace-nowrap">{review.date}</div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Collaborative Artist Quotes */}
-      <section className="py-24">
-        <div
-          ref={artistReveal.ref}
-          className="max-w-6xl mx-auto px-6"
-        >
-          <div className="flex items-center gap-4 mb-4">
-            <p className="section-label">Artist Voices</p>
-            <div className="flex-1 h-px bg-border" />
-          </div>
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-14">
-            Words from Fellow <span className="text-gradient-teal">Artists</span>
-          </h2>
-
-          <div className="space-y-6">
-            {artistQuotes.map((artist, i) => (
-              <div
-                key={artist.id}
-                className={`group relative bg-card border border-border rounded-2xl p-8 md:p-10 overflow-hidden transition-all duration-800 card-glow-hover ${artistReveal.visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
-                style={{ transitionDelay: `${i * 120}ms` }}
-              >
-                {/* Accent line */}
-                <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-accent via-primary to-transparent rounded-l-2xl" />
-
-                <div className="flex flex-col md:flex-row md:items-start gap-6">
-                  {/* Artist info */}
-                  <div className="md:w-48 flex-shrink-0">
-                    <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center mb-3">
-                      <span className="text-foreground font-bold text-lg">
-                        {artist.name.charAt(0)}
-                      </span>
-                    </div>
-                    <div className="font-bold text-foreground">{artist.name}</div>
-                    <div className="text-accent text-xs mt-0.5">{artist.instrument}</div>
-                    <div className="text-muted-foreground text-xs mt-2 font-mono leading-relaxed">{artist.collaboration}</div>
-                  </div>
-
-                  {/* Quote */}
-                  <div className="flex-1">
-                    <div className="text-accent/20 font-serif text-7xl leading-none mb-2 select-none">&ldquo;</div>
-                    <p className="text-foreground text-base md:text-lg leading-relaxed -mt-5">
-                      {artist.quote}
-                    </p>
                   </div>
                 </div>
               </div>
